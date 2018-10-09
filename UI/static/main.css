@@ -5,14 +5,63 @@
     position: fixed;
     height: 13%;
 }
+
 .mytitle {
     color: white;
     width: 50%;
     background: #440021;
     float: left;
 }
+.category {
+    margin-top: 5%;
+    float: left;
+    width: 20%;
+    background: #440021;
+    color: aliceblue;
+    text-decoration: none;
+    position: fixed;
+    margin-right: 10%;
+    padding-bottom: 14%;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+.category li {
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.category li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+img {
+    width: 100%;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px repeat(5, 1fr);
+    grid-gap: 5%;
+    grid-auto-rows: minmax(auto, 400px);
+    margin-top: 7%;
+    overflow: scroll;
+    width: 80%;
+    margin-left: 25%;
+    float: right;
+    position: relative;
+    height: 500px;
+}
+.myprod {
+    width: 100%;
+    height: 40%;
+    background: #7887AB;
+    margin-right: 10%;
+}
 .bigland {
     display: flex;
+    width: 100%;
+    position: fixed;
 }
 .menu-items {
     width: 50%;
@@ -27,7 +76,7 @@
 }
 .container {
     margin-top: 5.4%;
-    height: 100%;
+    height: 1%;
     float: right;
     width: 50%;
 }
@@ -47,12 +96,48 @@
     border-radius: 10px;
     padding-left: 3%;
 }
+.mymodal {
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.modal-content {
+    width: 30%;
+    background: brown;
+    margin: auto;
+    margin-top: 15%;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    color: white;
+    z-index: 1;
+}
+.modal-content h3 {
+    padding-left: 10px;
+}
+.close-modal {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background: burlywood;
+}
+.display-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s, transform
+}
 .myfooter {
     position: fixed;
     bottom: 0;
     width: 100%;
     background: #440021;
-    margin-top: 20px;
 }
 .myfooter p {
     text-align: center;
@@ -97,29 +182,18 @@
 .menu-items li a:hover .droplink {
     background: gray;
 }
-.products {
-    width: 50%;
-    background: blue;
-    float: left;
-}
-.records {
-    float: right;
-    width: 50%;
-    background: yellow;
-}
 .search {
-    padding-top: 1em;
-    margin: 0 auto;
-    width: 250px;
-    height: 1.5em;
-}
-.sales {
-    width: 100%;
-    border-collapse: collapse;
-}
-.sales td, .sales th {
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
     padding: 10px;
-    border: 2px solid #00001A;
+}
+#mysearch {
+    width: 300px;
+    border-radius: 5px;
+    position: fixed;
+    margin-bottom: 5%;
 }
 @media sreen and (maxwidth: 1024px) {
     .headnav {
@@ -158,13 +232,27 @@
 }
 @media screen and (max-width: 1080px) {
     .bigland {
-        flex-direction: column;
+        margin: 0 auto;
     }
-    .landing {
-        width: 100%;
+    .category {
+        width: 30%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+    }
+    .menu-items li {
+        display: none;
     }
 }
 @media screen and (max-width: 768px) {
+    .category {
+        width: 20%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
     .bigland {
         flex-direction: column;
         margin-top: 10%;
@@ -172,10 +260,32 @@
     .landing {
         width: 100%;
     }
+    #mysearch {
+        margin-bottom: 5%;
+    }
 }
 @media screen and (max-width: 500px) {
+    .search {
+        display: none;
+    }
+    .bigland {
+        flex-direction: column;
+    }
+    .wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 200px;
+    }
+    .myprod {
+        width: 100%;
+    }
     .landing {
         width: 100%;
+    }
+    .category {
+        width: 100%;
+        margin-top: 30%;
+        margin-bottom: 5%;
     }
     .headnav {
         width: 100%;

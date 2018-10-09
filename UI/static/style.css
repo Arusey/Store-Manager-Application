@@ -4,8 +4,9 @@ form {
 .login {
     margin: 0 auto;
     margin-top: 1%;
+    padding-bottom: 4%;
     border: solid 1px black;
-    width: 50%;
+    width: 80%;
     border-radius: 20px;
     line-height: 1.5em;
     background-color: #440021;
@@ -13,6 +14,7 @@ form {
     background-attachment: fixed;
     color: blanchedalmond;
     padding: 5%;
+    height: 1000%;
 }
 .login h1 {
     text-align: center;
