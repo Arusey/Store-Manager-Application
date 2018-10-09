@@ -1,0 +1,209 @@
+.headnav {
+    display: flex;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    height: 13%;
+}
+.mytitle {
+    color: white;
+    width: 50%;
+    background: #440021;
+    float: left;
+}
+.bigland {
+    display: flex;
+}
+.menu-items {
+    width: 50%;
+    float: left;
+    background: #440021;
+    margin: 0 auto;
+    position: relative;
+    line-height: 1.4em;
+}
+.fa-align-justify {
+    display: none;
+}
+.container {
+    margin-top: 5.4%;
+    height: 100%;
+    float: right;
+    width: 50%;
+}
+.menu-items li {
+    float: right;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 5%;
+    padding-bottom: 4%;
+    padding-right: 20px;
+}
+.landing {
+    margin-top: 6%;
+    width: 40%;
+    float: left;
+    border: 1px solid #00001A;
+    border-radius: 10px;
+    padding-left: 3%;
+}
+.myfooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #440021;
+    margin-top: 20px;
+}
+.myfooter p {
+    text-align: center;
+    color: azure;
+}
+.menu-items li a {
+    display: inline-block;
+    background: #7887AB;
+    color: aliceblue;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.menu-items input[type=text] {
+    border-radius: 10px;
+    height: 25px;
+    width: 100%;
+    margin-top: 10px;
+}
+.menu-items a {
+    text-decoration: none;
+}
+.droplink {
+    display: none;
+    position: absolute;
+    background: greenyellow;
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.droplink a {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+.droplink a:hover {
+    background: thistle;
+}
+.droplink:hover .droplink {
+    display: block;
+}
+.menu-items li a:hover .droplink {
+    background: gray;
+}
+.products {
+    width: 50%;
+    background: blue;
+    float: left;
+}
+.records {
+    float: right;
+    width: 50%;
+    background: yellow;
+}
+.search {
+    padding-top: 1em;
+    margin: 0 auto;
+    width: 250px;
+    height: 1.5em;
+}
+.sales {
+    width: 100%;
+    border-collapse: collapse;
+}
+.sales td, .sales th {
+    padding: 10px;
+    border: 2px solid #00001A;
+}
+@media sreen and (maxwidth: 1024px) {
+    .headnav {
+        width: 100%;
+        height: 50%;
+    }
+    .fa-align-justify {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+    #secondary {
+        width: 100%;
+        margin: 0;
+    }
+    .fa-align-justify {
+        display: block;
+    }
+    .container {
+        margin-top: 10%;
+        align-self: center;
+    }
+    .headnav {
+        width: 100%;
+        height: 100%;
+    }
+    .menu-items {
+        height: 10%;
+    }
+    .mytitle {
+        height: 10%;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .bigland {
+        flex-direction: column;
+    }
+    .landing {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .bigland {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .landing {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .landing {
+        width: 100%;
+    }
+    .headnav {
+        width: 100%;
+    }
+    .fa-align-justify {
+        display: block;
+    }
+    .container {
+        float: left;
+        margin: auto;
+        width: 100%;
+    }
+    .mytitle {
+        width: 100%;
+    }
+    .menu-items {
+        display: none;
+    }
+    .bigland {
+        margin-top: 20%;
+        flex-direction: column;
+        width: 100%;
+    }
+    .landing {
+        width: 100%;
+    }
+    .headnav {
+        width: 100%;
+        height: 165%;
+    }
+}
