@@ -16,6 +16,108 @@ form {
     padding: 5%;
     height: 1000%;
 }
+.attendant i{
+    font-size: 100px;
+}
+.admin-records i{
+    font-size: 100px;
+}
+.avail-records i{
+    font-size: 100px;
+}
+.admin-nav {
+    display: grid;
+    grid-template-columns: 30% 30% 30%; 
+    grid-gap: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.attendant {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+}
+.AttendantDetails {
+    float: left;
+    border: 1px solid #dddddd;
+    /* padding: 10px; */
+    width: 45%;
+    margin-top: 10%;
+}
+.AttendantDetails table{
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    width: 100%;
+}
+.createAttendant {
+    margin: 0 auto;
+    width: 45%;
+    float: right;
+    border: 1px solid #440021;
+    margin-top: 10%;
+    padding: 10px;
+    background: #440021;
+    color: white;
+    /* margin-right: 5%; */
+    border-radius: 10px;
+     
+}
+.createAttendant input[type=text], input[type=password] {
+    margin: o auto;
+    border-radius: 20px;
+    line-height: 1.5em;
+    width: 100%;
+}
+.createAttendant button {
+    height: 35px;
+    width: 100px;
+    background-color: #7887AB;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    align-content: center;
+    font-family: cursive;
+}
+.admin-records {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+}
+.avail-records {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.login {
+    margin: 0 auto;
+    margin-top: 1%;
+    padding-bottom: 4%;
+    border: solid 1px black;
+    width: 80%;
+    border-radius: 20px;
+    line-height: 1.5em;
+    background-color: #440021;
+    border-color: whitesmoke;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    padding: 5%;
+    height: 1000%;
+}
 .login h1 {
     text-align: center;
 }
@@ -41,6 +143,20 @@ form {
 .login a {
     color: azure;
 }
+.record-container {
+    width: 100%;
+    margin-top: 10%;
+}
+.record-container h1 {
+    margin: 0 auto;
+}
+.record-container table {
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    width: 100%;
+}
+
 .data label {
     text-shadow: 1em;
 }
@@ -75,6 +191,9 @@ form {
     border-radius: 15%;
 }
 @media screen and (max-width: 1080px) {
+    .headnav {
+        position: fixed;
+    }
     .bigland {
         margin-top: 15%;
     }
@@ -98,6 +217,9 @@ form {
     }
     .login input[type=text] {
         width: 100%;
+    } 
+    .record-container {
+        margin-top: 15%
     }
 }
 @media screen and (max-width: 500px) {
@@ -108,5 +230,8 @@ form {
     }
     .login input[type=text] {
         width: 100%;
+    }
+    .record-container {
+        margin-top: 35%;
     }
 }
