@@ -16,6 +16,25 @@ form {
     padding: 5%;
     height: 1000%;
 }
+.big-stock {
+    width: 100%;
+    margin-top: 6%;
+}
+.stocktable {
+    width: 50%;
+    float: left;
+
+}
+.stocktable table {
+    width: 100%;
+    height: 500px;
+}
+.stocktable table th {
+    margin: 0 auto;
+}
+.stocktable tr:nth-child(even) {
+    background: #dddddd;
+}
 .attendant i{
     font-size: 100px;
 }
