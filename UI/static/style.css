@@ -1,7 +1,141 @@
 form {
     display: inline-block;
 }
-.login {
+ .login {
+    margin: 0 auto;
+    margin-top: 1%;
+    padding-bottom: 10%;
+    border: solid 1px black;
+    width: 80%;
+    border-radius: 20px;
+    line-height: 1.5em;
+    background-color: #440021;
+    border-color: whitesmoke;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    padding: 5%;
+    /* height: %; */
+    position: relative;
+
+} 
+.big-stock {
+    width: 100%;
+    margin-top: 6%;
+}
+.stocktable {
+    width: 80%;
+    margin: 0 auto;
+
+}
+.stocktable table {
+    width: 100%;
+    height: 200px;
+}
+.stocktable table th {
+    margin: 0 auto;
+}
+.stocktable tr:nth-child(even) {
+    background: #dddddd;
+}
+.createproduct {
+    float: right;
+    width: 40%;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    background: #440021;
+    color: white;
+    padding: 20px;
+    margin-left: 5%;
+}
+.createproduct input[type=text] {
+    border-radius: 5px;
+    width: 250 px;
+    line-height: 1.5em;
+}
+.createproduct table {
+    margin: 0 auto;
+}
+.createproduct table tr {
+    margin: 5%;
+}
+.attendant i{
+    font-size: 100px;
+}
+.admin-records i{
+    font-size: 100px;
+}
+.avail-records i{
+    font-size: 100px;
+}
+.admin-nav {
+    display: grid;
+    grid-template-columns: 30% 30% 30%; 
+    grid-gap: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.attendant {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+}
+.AttendantDetails {
+    float: left;
+    border: 1px solid #dddddd;
+    /* padding: 10px; */
+    width: 45%;
+    margin-top: 10%;
+}
+.AttendantDetails table{
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    width: 100%;
+}
+.createAttendant {
+    margin: 0 auto;
+    width: 45%;
+    float: right;
+    border: 1px solid #440021;
+    margin-top: 10%;
+    padding: 10px;
+    background: #440021;
+    color: white;
+    /* margin-right: 5%; */
+    border-radius: 10px;
+     
+}
+.createAttendant input[type=text], input[type=password] {
+    margin: 0  auto;
+    border-radius: 10px;
+    line-height: 1.5em;
+    width: 100%;
+}
+.admin-records {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+}
+.avail-records {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* .login {
     margin: 0 auto;
     margin-top: 1%;
     padding-bottom: 4%;
@@ -15,7 +149,7 @@ form {
     color: blanchedalmond;
     padding: 5%;
     height: 1000%;
-}
+} */
 .login h1 {
     text-align: center;
 }
@@ -28,19 +162,37 @@ form {
     border-radius: 4px;
     box-sizing: border-box;
 }
-.login button {
-    height: 35px;
-    width: 100px;
-    background-color: #7887AB;
-    border-radius: 25px;
-    color: rgb(255, 255, 255);
-    text-transform: capitalize;
-    align-content: center;
-    font-family: cursive;
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    background: #7887AB;
+    color: aliceblue;
+    border: none;
+}
+#savebtn {
+    margin-top: 10px;
+    float: right;
+}
+#savebtn a {
+    text-decoration: none;
 }
 .login a {
     color: azure;
 }
+.record-container {
+    width: 100%;
+    margin-top: 10%;
+}
+.record-container h1 {
+    margin: 0 auto;
+}
+.record-container table {
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    width: 100%;
+}
+
 .data label {
     text-shadow: 1em;
 }
@@ -75,6 +227,9 @@ form {
     border-radius: 15%;
 }
 @media screen and (max-width: 1080px) {
+    .headnav {
+        position: fixed;
+    }
     .bigland {
         margin-top: 15%;
     }
@@ -93,11 +248,16 @@ form {
 @media screen and (max-width: 768px) {
     .login {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
+        /* margin-bottom: 10%; */
         padding-bottom: 20%;
+        flex-direction: column;
     }
     .login input[type=text] {
         width: 100%;
+    } 
+    .record-container {
+        margin-top: 15%
     }
 }
 @media screen and (max-width: 500px) {
@@ -108,5 +268,8 @@ form {
     }
     .login input[type=text] {
         width: 100%;
+    }
+    .record-container {
+        margin-top: 35%;
     }
 }
