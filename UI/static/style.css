@@ -1,0 +1,256 @@
+form {
+    display: inline-block;
+}
+.login {
+    margin: 0 auto;
+    margin-top: 1%;
+    padding-bottom: 4%;
+    border: solid 1px black;
+    width: 80%;
+    border-radius: 20px;
+    line-height: 1.5em;
+    background-color: #440021;
+    border-color: whitesmoke;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    padding: 5%;
+    height: 1000%;
+}
+.big-stock {
+    width: 100%;
+    margin-top: 6%;
+}
+.stocktable {
+    width: 50%;
+    float: left;
+
+}
+.stocktable table {
+    width: 100%;
+    height: 500px;
+}
+.stocktable table th {
+    margin: 0 auto;
+}
+.stocktable tr:nth-child(even) {
+    background: #dddddd;
+}
+.attendant i{
+    font-size: 100px;
+}
+.admin-records i{
+    font-size: 100px;
+}
+.avail-records i{
+    font-size: 100px;
+}
+.admin-nav {
+    display: grid;
+    grid-template-columns: 30% 30% 30%; 
+    grid-gap: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.attendant {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+}
+.AttendantDetails {
+    float: left;
+    border: 1px solid #dddddd;
+    /* padding: 10px; */
+    width: 45%;
+    margin-top: 10%;
+}
+.AttendantDetails table{
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    width: 100%;
+}
+.createAttendant {
+    margin: 0 auto;
+    width: 45%;
+    float: right;
+    border: 1px solid #440021;
+    margin-top: 10%;
+    padding: 10px;
+    background: #440021;
+    color: white;
+    /* margin-right: 5%; */
+    border-radius: 10px;
+     
+}
+.createAttendant input[type=text], input[type=password] {
+    margin: o auto;
+    border-radius: 20px;
+    line-height: 1.5em;
+    width: 100%;
+}
+.createAttendant button {
+    height: 35px;
+    width: 100px;
+    background-color: #7887AB;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    align-content: center;
+    font-family: cursive;
+}
+.admin-records {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+}
+.avail-records {
+    height: 300px;
+    padding: 20px;
+    background: #440021;
+    color: white;
+    border: 1px solid #440021;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.login {
+    margin: 0 auto;
+    margin-top: 1%;
+    padding-bottom: 4%;
+    border: solid 1px black;
+    width: 80%;
+    border-radius: 20px;
+    line-height: 1.5em;
+    background-color: #440021;
+    border-color: whitesmoke;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    padding: 5%;
+    height: 1000%;
+}
+.login h1 {
+    text-align: center;
+}
+.login input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.login button {
+    height: 35px;
+    width: 100px;
+    background-color: #7887AB;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    align-content: center;
+    font-family: cursive;
+}
+.login a {
+    color: azure;
+}
+.record-container {
+    width: 100%;
+    margin-top: 10%;
+}
+.record-container h1 {
+    margin: 0 auto;
+}
+.record-container table {
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    width: 100%;
+}
+
+.data label {
+    text-shadow: 1em;
+}
+.data input {
+    border-radius: 15%;
+}
+form {
+    display: inline-block;
+}
+.login h2 {
+    float: left;
+    color: aliceblue;
+}
+.login input[type=text], .login input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 2px solid white;
+}
+.logo a {
+    color: azure;
+}
+.data label {
+    text-shadow: 1em;
+}
+.data input {
+    border-radius: 15%;
+}
+@media screen and (max-width: 1080px) {
+    .headnav {
+        position: fixed;
+    }
+    .bigland {
+        margin-top: 15%;
+    }
+    .landing {
+        padding: 10%
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    .login {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .login {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20%;
+    }
+    .login input[type=text] {
+        width: 100%;
+    } 
+    .record-container {
+        margin-top: 15%
+    }
+}
+@media screen and (max-width: 500px) {
+    .login {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+    .login input[type=text] {
+        width: 100%;
+    }
+    .record-container {
+        margin-top: 35%;
+    }
+}
