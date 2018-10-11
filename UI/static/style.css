@@ -89,12 +89,19 @@ form {
     /* padding: 10px; */
     width: 45%;
     margin-top: 10%;
+    margin-left: 5%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+
 }
 .AttendantDetails table{
     margin: 0 auto;
-    border: 1px solid #dddddd;
+    border: 2px solid #dddddd;
     padding: 10px;
     width: 100%;
+}
+.AttendantDetails  table tr:nth-child(even) {
+    background: #dddddd;
 }
 .createAttendant {
     margin: 0 auto;
@@ -102,18 +109,27 @@ form {
     float: right;
     border: 1px solid #440021;
     margin-top: 10%;
-    padding: 10px;
+    padding: 1%;
     background: #440021;
     color: white;
-    /* margin-right: 5%; */
+    /* margin-right: 5%;     */
     border-radius: 10px;
      
 }
+.createAttendant h2 {
+    margin-left: 150px;
+}
+.createAttendant table {
+    margin: 0 auto;
+}
 .createAttendant input[type=text], input[type=password] {
-    margin: 0  auto;
+    /* margin: 0  auto; */
     border-radius: 10px;
     line-height: 1.5em;
     width: 100%;
+    padding: 8px;
+    margin: 2% 1% ;
+
 }
 .admin-records {
     height: 300px;
