@@ -14,6 +14,11 @@
 }
 .coverproduct {
     margin-top: 8%;
+    width: 100%;
+}
+.newproduct {
+    width: 50%;
+    margin: 0 auto;
 }
 .category {
     margin-top: 5%;
