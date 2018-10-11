@@ -168,6 +168,8 @@ form {
     background: #7887AB;
     color: aliceblue;
     border: none;
+    list-style: none;
+    text-decoration: none;
 }
 #savebtn {
     margin-top: 10px;
@@ -180,19 +182,32 @@ form {
     color: azure;
 }
 .record-container {
-    width: 100%;
+    width: 80%;
     margin-top: 10%;
 }
 .record-container h1 {
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: 10%;
 }
 .record-container table {
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: 10%;
     border: 1px solid #dddddd;
     padding: 10px;
     width: 100%;
 }
-
+.record-container table tr:nth-child(even) {
+    background: #dddddd;
+}
+.record-container button {
+    float: right;
+    margin: 0 auto  
+}
+.record-container  a {
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 .data label {
     text-shadow: 1em;
 }
