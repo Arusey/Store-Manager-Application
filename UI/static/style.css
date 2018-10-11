@@ -71,8 +71,14 @@ form {
     display: grid;
     grid-template-columns: 30% 30% 30%; 
     grid-gap: 5%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     margin-bottom: 10%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.admin-nav a{
+    color: white;
 }
 .bigattendant {
     width: 100%;
@@ -233,6 +239,12 @@ form {
     float: right;
     margin-top: 10px;
     margin-left: 10px;
+}
+.filterattendant {
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    /* margin-top: 8%; */
 }
 .data label {
     text-shadow: 1em;
