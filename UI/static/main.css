@@ -21,7 +21,7 @@
     margin: 0 auto;
 }
 .category {
-    margin-top: 5%;
+    margin-top: 0%;
     float: left;
     width: 20%;
     background: #440021;
@@ -33,7 +33,6 @@
     padding-right: 10px;
     padding-left: 15px;
     height: 100%
-
 }
 
 .category li {
@@ -65,13 +64,30 @@ img {
     grid-template-rows: 300px repeat(5, 1fr);
     grid-gap: 5%;
     grid-auto-rows: minmax(auto, 400px);
-    margin-top: 7%;
+    /* margin-top: 1%; */
     overflow: scroll;
     width: 80%;
     margin-left: 25%;
     float: right;
     position: relative;
     height: 500px;
+}
+.search {
+    text-align: center;
+    position: relative;
+    /* white-space: nowrap; */
+    /* vertical-align: middle; */
+    margin: 0 auto;
+    margin-top: 6%;
+    width: 100%;
+    border-radius: 10px;
+
+  
+    /* height: 20px; */
+}
+.search input[type=text] {
+    /* height: 20px;; */
+   
 }
 .myprod {
     width: 100%;
@@ -83,7 +99,8 @@ img {
     display: flex;
     width: 100%;
     position: relative;
-    height: 600px;
+    /* height: 600px; */
+    margin-top: 1%;
 }
 .menu-items {
     width: 50%;
@@ -153,13 +170,17 @@ img {
 }
 .sale-content {
     width: 30%;
-    background: brown;
+    background: white;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 10%;
     border: 1px solid whitesmoke;
     border-radius: 10px;
-    color: white;
+    color: black;
     z-index: 1;
+}
+.sale-content input[type=text]{
+ padding: 5px;
+ border-radius: 10px;
 }
 .modal-content h3 {
     padding-left: 10px;
@@ -183,6 +204,7 @@ img {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 6%;
     background: #440021;
 }
 .myfooter p {
@@ -225,19 +247,13 @@ img {
 .menu-items li a:hover .droplink {
     background: gray;
 }
-.search {
-    text-align: center;
-    position: relative;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding: 10px;
-}
-#mysearch {
+
+/* #mysearch {
     width: 300px;
     border-radius: 5px;
     position: fixed;
     margin-bottom: 5%;
-}
+} */
 @media sreen and (maxwidth: 1024px) {
     .headnav {
         width: 100%;
@@ -318,9 +334,9 @@ img {
     .landing {
         width: 100%;
     }
-    #mysearch {
+    /* #mysearch {
         margin-bottom: 5%;
-    }
+    } */
 }
 
 @media screen and (max-width: 500px) {

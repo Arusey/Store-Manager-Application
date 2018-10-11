@@ -1,7 +1,7 @@
 let mymodal = document.getElementsByClassName("mymodal")[0];
-let infobtn = document.querySelectorAll("#infobtn");
-let closeModal = document.querySelectorAll(".close-modal");
-let addcart = document.getElementsByClassName("addcart")["0"];
+// let infobtn = document.querySelectorAll("#infobtn");
+// let closeModal = document.querySelectorAll(".close-modal");
+// let addcart = document.getElementsByClassName("addcart")["0"];
  
 let salemodal = document.getElementsByClassName("sale-modal")[0];
 
