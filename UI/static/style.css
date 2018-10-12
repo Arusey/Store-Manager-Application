@@ -306,13 +306,36 @@ form {
         width: 100%;
         height: 100%;
     }
+
     .login {
         width: 100%;
         padding-bottom: 10%;
     }
-}
+    .bigattendant {
+        margin-top: 6%;
+    }
+        /* .bigattendant {
+            flex-direction: column;
+            font-size: 36px;
+            margin-top: 7%;
+        }
+        .AttendantDetails {
+            width: 100%;
+            margin: 0 auto;
+            /* margin-top: 20%; */
+        /* }
+        .AttendantDetails  table{
+            width: 100%;
+        }
+        .createAttendant {
+            width: 100%;
+            margin: 0 auto;
+            
+        }
+    } 
+    */
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) { 
     .login {
         width: 100%;
         padding-bottom: 20%;
@@ -325,8 +348,68 @@ form {
         margin-top: 15%
     }
 }
+.bigattendant {
+    flex-direction: column;
+    font-size: 30px;
+}
+.AttendantDetails {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.AttendantDetails  table{
+    width: 100%;
+}
+.createAttendant {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.createAttendant h2 {
+    margin: 0 auto;
+    float: left;  
+    margin-top: 4%;  
 
+}
+.createAttendant  table{
+    margin: 0 auto;
+}
+.createAttendant input[type=text], input[type=password]{
+    width: 150px;    
+    height: 20px;
+}
+footer {
+    display: none;
+}
 @media screen and (max-width: 500px) {
+    .bigattendant {
+        flex-direction: column;
+    }
+    .AttendantDetails {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30%;
+    }
+    .AttendantDetails  table{
+        width: 100%;
+    }
+    .createAttendant {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .createAttendant h2 {
+        margin: 0 auto;
+        float: left;  
+        margin-top: 4%;  
+
+    }
+    .createAttendant  table{
+        margin: 0 auto;
+    }
+    .createAttendant input[type=text], input[type=password]{
+        width: 150px;    
+    }
     .login {
         width: 100%;
         flex-direction: column;
@@ -337,5 +420,8 @@ form {
     }
     .record-container {
         margin-top: 35%;
+    }
+    footer {
+        display: none;
     }
 }
