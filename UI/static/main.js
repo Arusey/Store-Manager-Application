@@ -1,6 +1,9 @@
 let mymodal = document.getElementsByClassName("mymodal")[0];
 let salemodal = document.getElementsByClassName("sale-modal")[0];
 
+
+
+
 function displayModal() {
     mymodal.style.display = "block";
 }
@@ -10,10 +13,14 @@ function saleModal() {
 }
 
 
-window.onclick = function (event) {
+
+
+window.onclick = function(event) {
     if (event.target === mymodal || event.target === salemodal) {
+        
         mymodal.style.display = "none";
         salemodal.style.display = "none";
     }
 }
 mymodal.style.display = "none"
+editmodal.style.display = "none"

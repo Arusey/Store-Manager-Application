@@ -26,6 +26,35 @@
             </div>
         </div>
     </header>
+    <div class="editmodal">
+        <div class="edit-content">
+            <table>
+                <tr><h2>Edit Product</h2></tr>
+                <tr>
+                    <td><label for="">Product Name</label></td>
+                    <td><input type="text" placeholder="Enter Product Name"></td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td><label for="">Product Quantity</label></td>
+                    <td><input type="text" name="" placeholder="Enter Quantity" id=""></td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td><label for="text">Amount</label></td>
+                    <td><input type="text" name="" id="" placeholder="Sh"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><button class="button">Submit</button></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
     <div class="big-stock">
         <h1>Available Products</h1>
         <div class="stocktable">
@@ -117,8 +146,14 @@
             </table>
 
             <div id="savebtn">
-                <a class="button" href="">Save</a>
+                <button class="button">Save</button>
             </div>
+            <div id="savebtn">
+               <button  class="button" onclick="editModal()">Edit</button>
+                
+            </div>
+            
+
         </div>
 
     </div>
@@ -126,7 +161,7 @@
         <p>Footer</p>
     </footer>
 
-
+    <script src="static/modal.js"></script>
 </body>
 
 </html>
