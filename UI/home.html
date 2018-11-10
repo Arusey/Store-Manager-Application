@@ -57,14 +57,15 @@
   </div>
   <div class="mymodal">
 
-    <div class="modal-content">
-      <h2>Product information</h2>
+     <div class="modal-content" id="oneproduct">  
+       <h2>Product information</h2>
       <hr>
       <ol>
-        <li>Quantity: 5</li>
-        <li>Minimum Stock: 3</li>
-      </ol>
-    </div>
+        <li>Name: <strong></strong></li>
+        <li>Quantity: <strong></strong></li>
+        <li>Minimum Stock: <strong></strong></li>
+      </ol> 
+    </div> 
 
   </div>
   <div class="search">
@@ -73,141 +74,26 @@
   <div class="bigland">
     <div class="category">
       <h2>Categories</h2>
-      <ol>
+
         <li><a href="#electronics">Electronics</a></li>
         <li><a href="#">Furniture</a></li>
         <li><a href="#">Computers</a></li>
         <li><a href="#">Clothing</a></li>
         <li><a href="#">Stationary</a></li>
-      </ol>
+      </ol><br>
       <a class="button" href="records.html">View Sales Records</a>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper" id="products">
 
 
+<!--       
       <div class="myprod">
         <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()" class="addcart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
+        <p><br></p>
         <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
         <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-
-      </div>
-
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
-      <div class="myprod">
-        <img src="images/image1.jpg" alt="" srcset="">
-        <p>Iphone XR<br>45000</p>
-        <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-        <button id="infobtn" onclick="displayModal()"><i class="fas fa-info-circle">More info </i></button>
-      </div>
+      </div> -->
     </div>
   </div>
   </div>
@@ -215,6 +101,8 @@
     <p>Footer</p>
   </footer>
   <script src="static/main.js"></script>
+  <script src="static/getproducts.js"></script>
+
 </body>
 
 </html>
