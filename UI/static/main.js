@@ -1,11 +1,44 @@
 let mymodal = document.getElementsByClassName("mymodal")[0];
 let salemodal = document.getElementsByClassName("sale-modal")[0];
+let singleproduct = document.getElementById('oneproduct')
 
-
-
-
-function displayModal() {
+let token = localStorage.getItem('token')
+function displayModal(id) {
+    console.log(id)
+    fetch('http://127.0.0.1:5000/api/v2/products/' +id, {
+        headers: {
+            'x-access-token': token
+        }
+    })
+    .then((res) => res.json())
+    .then((data) => { 
+        let product = data.product
+        // console.log(data.product)
+        if (data.Message == 'This token is invalid'){
+            alert('Please login first');
+            window.location.replace('index.html')
+        }
+        if (data.Message == 'No products have been posted yet'){
+            alert('No product is available for veiwing at the moment');
+        }
+        let result = '';
+        result += `
+        <div class="modal-content">
+        <h2>Product information</h2>
+        <hr>
+        <ol>
+          <li>Name: <strong>${product.name}</strong></li>
+          <li>Quantity: <strong>${product.currentstock}</strong></li>
+          <li>Minimum Stock: <strong>${product.minimumstock}</strong></li>
+        </ol>
+        </div>
+        `
+        singleproduct.innerHTML = result;
+        localStorage.setItem('oneproduct', JSON.stringify(data.product) );
+    });
+    
     mymodal.style.display = "block";
+    
 }
 function saleModal() {
 
@@ -22,5 +55,4 @@ window.onclick = function(event) {
         salemodal.style.display = "none";
     }
 }
-mymodal.style.display = "none"
-editmodal.style.display = "none"
+// mymodal.style.display = none"
