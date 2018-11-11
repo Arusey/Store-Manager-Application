@@ -5,7 +5,7 @@ function deleteProduct(id) {
     localStorage.setItem('id', id)
     let token = localStorage.getItem('token')
 
-    fetch('http://127.0.0.1:5000/api/v2/products/' +id, {
+    fetch('https://lagatstores.herokuapp.com/api/v2/products/' +id, {
         method: 'DELETE',
         mode: 'cors',
         headers: {
