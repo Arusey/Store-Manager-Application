@@ -26,142 +26,67 @@
             </div>
         </div>
     </header>
-    <div class="editmodal">
-        <div class="edit-content">
-            <table>
-                <tr><h2>Edit Product</h2></tr>
-                <tr>
-                    <td><label for="">Product Name</label></td>
-                    <td><input type="text" placeholder="Enter Product Name"></td>
-                </tr>
-                <br>
-                <br>
-                <tr>
-                    <td><label for="">Product Quantity</label></td>
-                    <td><input type="text" name="" placeholder="Enter Quantity" id=""></td>
-                </tr>
-                <br>
-                <br>
-                <tr>
-                    <td><label for="text">Amount</label></td>
-                    <td><input type="text" name="" id="" placeholder="Sh"></td>
-                </tr>
-                <br>
-                <tr>
-                    <td><button class="button">Submit</button></td>
-                </tr>
 
-            </table>
-        </div>
-
-    </div>
     <div class="big-stock">
+        <h5 id="deletemessage"></h5>
         <h1>Available Products</h1>
-        <div class="stocktable">
-            <table>
-                <tr>
-                    <th>Product Name</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Category</th>
-                    <th>Delete</th>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
-                <tr>
-                    <td contenteditable="true"> Wifi Router</td>
-                    <td contenteditable="true">50</td>
-                    <td contenteditable="true">Sh 5000</td>
-                    <td contenteditable="true">Electronics</td>
-                    <td><i class="far fa-trash-alt"></i></td>
-                </tr>
+        <div class="stocktable" >
+            <table id="adminproducts">
+               
+               
             </table>
 
             <div id="savebtn">
                 <button class="button">Save</button>
             </div>
-            <div id="savebtn">
+            <!-- <div id="savebtn">
                <button  class="button" onclick="editModal()">Edit</button>
                 
-            </div>
+            </div> -->
             
 
         </div>
+        <div class="editmodal" id="updateproduct">
+                <!-- <div class="edit-content" >
+                    <h2>Edit Product</h2><br>
+                        <form action="" method="post" id="editproduct">
+                            <table>
+                                <tr>
+                                    <td><label for="name">Name</label></td>
+                                    <td><input type="text" placeholder="Enter Username"></td>
+                                </tr>
+                                <br>
+                                <br>
+                                <tr>
+                                    <td><label for="Password">Quantity</label></td>
+                                    <td><input type="text" placeholder="Enter Quantity"></td>
+                                </tr>
+                                <br>
+                                <tr>
+                                    <td><label for="Price">Price</label></td>
+                                    <td><input type="text" placeholder="Enter price"></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="button" type="submit">Edit</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                </div> -->
+        
+            </div>
 
     </div>
-    <footer class="myfooter">
+    <!-- <footer class="myfooter">
         <p>Footer</p>
-    </footer>
+    </footer> -->
+
+    <script src="static/deleteProduct.js"></script>
 
     <script src="static/modal.js"></script>
+    <script src="static/getadminProducts.js"></script>
+
+
+
 </body>
 
 </html>
