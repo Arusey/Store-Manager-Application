@@ -5,7 +5,7 @@ let singleproduct = document.getElementById('oneproduct')
 let token = localStorage.getItem('token')
 function displayModal(id) {
     console.log(id)
-    fetch('http://127.0.0.1:5000/api/v2/products/' +id, {
+    fetch('https://lagatstores.herokuapp.com/api/v2/products/' +id, {
         headers: {
             'x-access-token': token
         }
@@ -13,7 +13,6 @@ function displayModal(id) {
     .then((res) => res.json())
     .then((data) => { 
         let product = data.product
-        // console.log(data.product)
         if (data.Message == 'This token is invalid'){
             alert('Please login first');
             window.location.replace('index.html')
@@ -55,4 +54,3 @@ window.onclick = function(event) {
         salemodal.style.display = "none";
     }
 }
-// mymodal.style.display = none"
