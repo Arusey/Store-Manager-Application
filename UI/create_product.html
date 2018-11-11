@@ -31,33 +31,42 @@
         <div class="newproduct">
             <div class="login">
                 <h2>Create Product</h2><br>
-                <form action="" method="post">
+                <form id="addProduct">
+                    <h5 id=prodmessage></h5>
                     <table>
                         <tr>
                             <td><label for="name">Name</label></td>
-                            <td><input type="text" placeholder="Enter Username"></td>
+                            <td><input id="name" type="text" placeholder="Enter Product Name"></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label for="name">Category</label></td>
+                            <td><input id="category" type="text" placeholder="Enter Product Category"></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label for="name">Description</label></td>
+                            <td><input id="description" type="text" placeholder="Enter Product Description"></td>
                         </tr>
                         <br>
                         <br>
                         <tr>
-                            <td><label for="Password">Quantity</label></td>
-                            <td><input type="text" placeholder="Enter Quantity"></td>
+                            <td><label for="Quantity">Quantity</label></td>
+                            <td><input id="currentstock" type="text" placeholder="Enter Quantity"></td>
                         </tr>
                         <br>
                         <tr>
-                            <td><label>Category</label></td>
-                            <td>
-                                <Select id="option">
-                                    <option value="">Electronics</option>
-                                    <option value="">Furniture</option>
-                                    <option value="">Computers</option>
-                                    <option value="">Clothing</option>
-                                    <option value="">Stationery</option>
-                                </Select>
-                            </td>
+                            <td><label for="name">Minimum Stock</label></td>
+                            <td><input id="minimumstock" type="text" placeholder="Enter Minimum Stock"></td>
                         </tr>
+                        <br>
                         <tr>
-                            <td><button class="button">Create</button></td>
+                            <td><label for="name">Price</label></td>
+                            <td><input id="price" type="text" placeholder="Enter Product Price"></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><button class="button" type="submit">Create</button></td>
                         </tr>
                     </table>
                 </form>
@@ -73,6 +82,10 @@
         <p>Footer</p>
     </footer>
     <script src="static/main.js"></script>
+    <script src="static/createProduct.js"></script>
+    <script src="static/deleteProduct.js"></script>
+
+
 </body>
 
 </html>
