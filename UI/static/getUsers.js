@@ -3,7 +3,7 @@ function getAllusers(){
     let token = localStorage.getItem('token');
     let allusers = document.getElementById('allusers')
 
-    fetch('http://127.0.0.1:5000/api/v2/auth/attsignup', {
+    fetch('https://lagatstores.herokuapp.com/api/v2/auth/attsignup', {
         headers: {
             'x-access-token': token
         }
