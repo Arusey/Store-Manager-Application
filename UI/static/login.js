@@ -7,7 +7,7 @@ function userLogin(e){
     console.log(email)
     let password = document.getElementById('password').value;
     console.log(password)
-    fetch('http://127.0.0.1:5000/api/v2/auth/login', {
+    fetch('https://lagatstores.herokuapp.com/api/v2/auth/login', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -23,7 +23,6 @@ function userLogin(e){
 
             console.log(data.token)
             document.getElementById('message').innerHTML = data.Message;
-            // Message.innerHTML = data.Message;
             console.log(data.Message)
             if(data.Message == 'user successfully logged in'){
 
