@@ -149,7 +149,7 @@ form {
     margin: 0 auto;
 }
 
-.createAttendant input[type=text], input[type=password] {
+.createAttendant input[type=text],  input[type=email], input[type=password] {
     border-radius: 10px;
     line-height: 1.5em;
     width: 100%;

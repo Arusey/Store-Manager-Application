@@ -75,7 +75,7 @@ img {
 .wrapper {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 300px repeat(5, 1fr);
+    grid-template-rows: 300px repeat(5, 1fr); 
     grid-gap: 5%;
     grid-auto-rows: minmax(auto, 400px);
     overflow: scroll;
@@ -83,7 +83,7 @@ img {
     margin-left: 25%;
     float: right;
     position: relative;
-    height: 500px;
+    height: 500px; 
 }
 
 .search {
@@ -98,6 +98,7 @@ img {
 .myprod {
     width: 100%;
     height: 40%;
+    float: left;
     background: #7887AB;
     margin-right: 10%;
 }
