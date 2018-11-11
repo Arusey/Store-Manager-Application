@@ -28,120 +28,69 @@
         </div>
     </header>
     <div class="bigattendant">
-        <div class="AttendantDetails">
-            <h2>Attendants</h2>
+        <div class="AttendantDetails" id="allusers">
+            <h2>Users</h2>
             <table>
                 <tr>
                     <th>Name</th>
-                    <th>Identification No.</th>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
+                    <th>Email</th>
+                    <th>Role</th>
 
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
                 </tr>
                 <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
-
-                    <td><span><i class="far fa-trash-alt"></i></span></td>
-                </tr>
-                <tr>
-                    <td>Kevin Kibet</td>
-                    <td>1234567890</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
 
                     <td><span><i class="far fa-trash-alt"></i></span></td>
                 </tr>
             </table>
-
         </div>
         <div class="createAttendant">
             <h2>New Attendant Account</h2>
+
             <hr>
-            <table>
-                <tr>
-                    <td><label for="">National ID:</label></td>
-                    <td><input type="text" placeholder="Enter National ID"></td>
-                </tr>
-                <br>
-                <br>
-                <tr>
-                    <td><label for="">Create Password</label></td>
-                    <td><input type="password" placeholder="Enter New Password"></td>
-                </tr>
-                <br>
-                <br>
-                <tr>
-                    <td><label for="">Confirm Password</label></td>
-                    <td><input type="password" placeholder="Confirm Password"></td>
-                </tr>
-                <tr>
-                    <td><button class="button">Submit</button></td>
-                </tr>
-            </table>
-            <form action="">
+            <form id="signup">
+                <h5 id="adminmessage"></h5>
 
-
-
-
-
-
+                <table>
+                    <tr>
+                        <td><label for="">Name</label></td>
+                        <td><input id="name" type="text" placeholder="Enter name"></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="">Email</label></td>
+                        <td><input id="email" type="email" placeholder="Enter Email"></td>
+                    </tr>
+                    <br>
+                    <br>
+                    <tr>
+                        <td><label for="">Enter Password</label></td>
+                        <td><input id="password" type="password" placeholder="Enter New Password"></td>
+                    </tr>
+                    <br>
+                    <br>
+                    <tr>
+                        <td><label for="">Role</label></td>
+                        <td><input id="role" type="text" placeholder="Enter User Role"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" class="button">Submit</button></td>
+                    </tr>
+                </table>
             </form>
+
+
         </div>
     </div>
 
     <footer class="myfooter">
         <p>Footer</p>
     </footer>
+
+    <script src="static/signup.js"></script>
+    <script src="static/getUsers.js"></script>
 
 
 </body>
