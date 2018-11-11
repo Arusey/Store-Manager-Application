@@ -3,7 +3,7 @@ function getAllproducts(){
     let token = localStorage.getItem('token');
     let allproducts = document.getElementById('adminproducts')
 
-    fetch('http://127.0.0.1:5000/api/v2/products', {
+    fetch('https://lagatstores.herokuapp.com/api/v2/products', {
         headers: {
             'x-access-token': token
         }
