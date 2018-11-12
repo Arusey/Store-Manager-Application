@@ -1,5 +1,6 @@
 window.onload = getAllproducts()
 function getAllproducts(){
+    // e.preventDefault()
     let token = localStorage.getItem('token');
     let allproducts = document.getElementById('adminproducts')
 
@@ -22,14 +23,14 @@ function getAllproducts(){
         data.products.forEach(product => {
             result += `
             <table>
-                <tr>
-                    <th>Product Name</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Category</th>
-                    <th>Delete</th>
-                    <th>Update</th>
-                </tr>
+            <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>   
                 <tr>
                     <td>${product.name}</td>
                     <td>${product.currentstock}</td>

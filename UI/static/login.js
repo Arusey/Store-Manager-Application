@@ -1,12 +1,12 @@
-document.getElementById('login').addEventListener("click", userLogin);
+document.getElementById("loginform").addEventListener("submit", userLogin);
 let Message = document.getElementById("Message");
+function userLogin(e) {
 
-function userLogin(e){
     e.preventDefault();
     let email = document.getElementById('email').value;
-    console.log(email)
     let password = document.getElementById('password').value;
-    console.log(password)
+
+
     fetch('https://lagatstores.herokuapp.com/api/v2/auth/login', {
         method: 'POST',
         mode: 'cors',
@@ -21,17 +21,35 @@ function userLogin(e){
         .then(res => res.json())
         .then((data) => {
 
-            console.log(data.token)
-            document.getElementById('message').innerHTML = data.Message;
-            console.log(data.Message)
-            if(data.Message == 'user successfully logged in'){
 
+            document.getElementById('message').innerHTML = data.Message;
+            // alert(data.Message)
+            if (data.Message == 'user successfully logged in') {
                 let token = data.token;
-                console.log(token)
                 localStorage.setItem('token', token);
-                console.log(token)
-                window.location.replace('home.html')
+                fetch('https://lagatstores.herokuapp.com/api/v2/auth/attsignup', {
+                    headers: {
+                        'x-access-token': token
+                    }
+                })
+                .then((res) => res.json())
+                .then((data) => {
+                    data.users.forEach(user => {
+                        if (user.email == email){
+                            if (user.role == "admin"){
+                             window.location.replace('admin.html');
+                        }
+                        else{
+                            window.location.replace('home.html');
+                        }
+                    }
+                    });
+                    
+                })
+
             }
+
+
         })
         .catch((err) => console.log(err))
-    }
+}

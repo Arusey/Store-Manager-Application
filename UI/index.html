@@ -20,8 +20,6 @@
             </div>
             <div class="menu-items">
                 <ul>
-                    <li><a class="button" href="home.html">Attendant</a></li>
-                    <li><a class="button" href="admin.html">Admin</a></li>
                     <li><i class="fas fa-align-justify"></i></li>
                 </ul>
             </div>
@@ -53,7 +51,7 @@
                 <h2>Log In</h2><br>
                 
                 <h5 id="message"></h5>
-                <form>
+                <form id="loginform">
                     <table>
                         <tr>
                             <td><label for="name">Email</label></td>
@@ -66,7 +64,7 @@
                             <td><input type="password" id="password" placeholder="Enter Password"></td>
                         </tr>
                         <tr>
-                            <td><a class="button" id="login" onclick="userLogin()" href="">Login</a>   </td>
+                            <td><button class="button" id="login" type="submit" href="">Login</button>   </td>
                         </tr>
                     </table>
                 </form>
@@ -82,6 +80,7 @@
 
 
     <script src="static/login.js"></script>
+    <script src="static/userRole.js"></script>
 </body>
 
 </html>

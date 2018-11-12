@@ -23,9 +23,9 @@ function getAllproducts(){
             result += `
             <div id="products" class="myprod">
             <img src="images/image1.jpg" alt="" srcset="">
-            <p>${product.name}<br>${product.description}</p>
-            <button onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
-            <button id="infobtn" onclick="displayModal('${product.id}')"><i class="fas fa-info-circle">More info </i></button>
+            <p>ID: ${product.id}<br>Name: ${product.name}<br>Quantity Available: ${product.currentstock}</p>
+            <button class="button" onclick="saleModal()"><i class="fas fa-shopping-cart"></i>Make Sale</button>
+            <button class="button" id="infobtn" onclick="displayModal('${product.id}')"><i class="fas fa-info-circle">More info </i></button>
           </div>
 
             `
