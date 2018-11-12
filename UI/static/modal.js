@@ -2,9 +2,10 @@
 let editmodal = document.getElementsByClassName("editmodal")[0];
 let updateproduct = document.getElementById('updateproduct') 
 let token = localStorage.getItem('token')
-function editModal(id) {
+function editModal(id, e) {
+    e.preventDefault()
     localStorage.setItem('id', id)
-    fetch('http://127.0.0.1:5000/api/v2/products/' +id, {
+    fetch('https://lagatstores.herokuapp.com/api/v2/products/' +id, {
         headers: {
             'x-access-token': token
         }
@@ -43,7 +44,7 @@ function editModal(id) {
                             <td><input type="text" id="thisprice" placeholder="Enter price" value="${product.price}"></td>
                         </tr>
                         <tr>
-                            <td><button class="button" type="submit" onclick="editProduct()">Edit</button></td>
+                            <td><button class="button" type="submit" onclick="editProduct(${product.id})">Edit</button></td>
                         </tr>
                     </table>
                 </form>
@@ -58,16 +59,15 @@ function editModal(id) {
     editmodal.style.display = "block";
 }
 
-function editProduct(){
+function editProduct(e){
+    e.preventDefault();
     let name = document.getElementById("thisname").value;
-        currentstock = document.getElementById("thisstock").value;
-        price = document.getElementById("thisprice").value;
+    let currentstock = document.getElementById("thisstock").value;
+    let price = document.getElementById("thisprice").value;
     
-    let id = int(localStorage.getItem('id'));
-    console.log(id)
     let choice = confirm("Sure you wannna update?");
     if (choice) {
-        fetch(`http://127.0.0.1:5000/api/v2/products/` + id, {
+        fetch(`https://lagatstores.herokuapp.com/api/v2/products/` + id, {
             method: 'PUT',
             mode: 'cors',
             headers: {
@@ -79,25 +79,27 @@ function editProduct(){
                 currentstock: currentstock,
                 price: price
             })
-        })
-            .then(res => res.json())
-            .then(data => {
-                alert(data)
-                if (data.Message == 'This token is invalid') {
-                    alert('Login again, session is over')
-                    window.location.replace('index.html');
-                }
-                let updatemodal = document.getElementById('updateproduct');
-                updatemodal.innerHTML = '';
-                updatemodal.innerHTML = data.Message || data.Message;
-
+        })  
+        .then(res => res.json())
+        .then(data => {
+            alert(name+id+price+currentstock)
             })
-            .catch((err) => console.log(err))
-    }
+        }
+    //             if (data.Message == 'This token is invalid') {
+    //                 alert('Login again, session is over')
+    //                 window.location.replace('index.html');
+    //             }
+    //             let updatemodal = document.getElementById('updateproduct');
+    //             updatemodal.innerHTML = '';
+    //             updatemodal.innerHTML = data.Message || data.Message;
+
+    //         })
+    //         .catch((err) => console.log(err))
+    // }
 
 }
-window.onclick = function(event) {
-    if (event.target === editmodal) {
-        editmodal.style.display = "none"; 
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target === editmodal) {
+//         editmodal.style.display = "none"; 
+//     }
+// }

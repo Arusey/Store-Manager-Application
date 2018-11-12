@@ -5,7 +5,7 @@ let singleproduct = document.getElementById('oneproduct')
 let token = localStorage.getItem('token')
 function displayModal(id) {
     console.log(id)
-    fetch('https://lagatstores.herokuapp.com/api/v2/products/' +id, {
+    fetch('http://127.0.0.1:5000/api/v2/products/' +id, {
         headers: {
             'x-access-token': token
         }

@@ -39,8 +39,6 @@ function getAllsales(){
                 <td>${sale.price}</td>
                 <td>${sale.attendantname}</td>
        
-
-
             </tr>
             </table>
            

@@ -6,7 +6,7 @@ function postSale() {
         let currentstock = document.getElementById("thisquant").value;
         let id = document.getElementById('prodid').value;
         console.log(currentstock)
-        fetch('http://127.0.0.1:5000/api/v2/sales', { 
+        fetch('https://lagatstores.herokuapp.com/api/v2/sales', { 
             headers: {
                 'x-access-token': localStorage.getItem('token'),
                 'content-type': 'application/json'
