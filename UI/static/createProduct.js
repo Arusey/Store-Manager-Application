@@ -28,6 +28,7 @@ function addProduct(e){
     .then(res => res.json())
         .then((data) => {
             document.getElementById('prodmessage').innerHTML = data.Message;
+            window.location.replace('stock.html')
         });
 }
 window.onload = getAllproducts();
