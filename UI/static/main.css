@@ -253,7 +253,6 @@ img {
 
 .menu-items li a {
     display: inline-block;
-    text-transform: uppercase;
     border-radius: 10px;
 }
 
